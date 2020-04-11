@@ -1,0 +1,18 @@
+codimth_entity_config.ball.*:
+  type: config_entity
+  label: ball
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    uuid:
+      type: string
+    description:
+      type: string
+    color:
+      type: string
+    point_value:
+      type: string

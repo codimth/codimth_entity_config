@@ -1,0 +1,39 @@
+entity.ball.collection:
+  path: '/admin/structure/ball'
+  defaults:
+    _entity_list: 'ball'
+    _title: 'ball configuration'
+  requirements:
+    _permission: 'administer ball'
+
+entity.ball.add_form:
+  path: '/admin/structure/ball/add'
+  defaults:
+    _entity_form: 'ball.add'
+    _title: 'Add a ball'
+  requirements:
+    _permission: 'administer ball'
+
+entity.ball.edit_form:
+  path: '/admin/structure/ball/{ball}'
+  defaults:
+    _entity_form: 'ball.edit'
+    _title: 'Edit a ball'
+  requirements:
+    _permission: 'administer ball'
+
+entity.ball.delete_form:
+  path: '/admin/structure/ball/{ball}/delete'
+  defaults:
+    _entity_form: 'ball.delete'
+    _title: 'Delete a ball'
+  requirements:
+    _permission: 'administer ball'
+
+entity.ball.preview_page:
+  path: '/admin/structure/ball/{ball}/preview'
+  defaults:
+    _controller: '\Drupal\codimth_entity_config\Controller\BallController::preview'
+    _title: 'Preview a ball'
+  requirements:
+    _permission: 'administer ball'

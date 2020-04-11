@@ -1,0 +1,5 @@
+entity.ball.add_form:
+  route_name: 'entity.ball.add_form'
+  title: 'Add ball'
+  appears_on:
+    - entity.ball.collection

@@ -1,0 +1,6 @@
+name: Codimth Entity Config
+type: module
+description: 'Provides a ball configuration entity.'
+package: Custom
+core: 8.x
+configure: entity.ball.collection
